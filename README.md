@@ -1,5 +1,7 @@
 # Melee Positional Miss Trigger for [Triggevent](https://github.com/xpdota/event-trigger/)
 
+![Logo](logo.png)
+
 The classic positional hit/miss trigger, but now in Triggevent.
 
 To add:
