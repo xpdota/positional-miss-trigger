@@ -49,7 +49,7 @@ jobs:
           repository: 'xpdota/event-trigger'
           # You can set this to 'stable' to build against the stable release build, or 'master' to build against
           # the bleeding edge.
-          ref: 'stable'
+          ref: 'master'
           path: './triggevent-base'
 
       - name: Build deps
