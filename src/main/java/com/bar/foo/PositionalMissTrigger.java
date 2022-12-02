@@ -1,12 +1,11 @@
 package com.bar.foo;
 
+import gg.xp.reevent.events.EventContext;
 import gg.xp.reevent.scan.HandleEvents;
 import gg.xp.xivdata.data.duties.KnownDuty;
 import gg.xp.xivsupport.callouts.CalloutRepo;
 import gg.xp.xivsupport.callouts.ModifiableCallout;
 import gg.xp.xivsupport.events.actlines.events.AbilityUsedEvent;
-
-import javax.naming.event.EventContext;
 
 @CalloutRepo(name = "Positional Miss Callouts", duty = KnownDuty.None)
 public class PositionalMissTrigger {
