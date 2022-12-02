@@ -1,4 +1,10 @@
-# Example Addon for [Triggevent](https://github.com/xpdota/event-trigger/)
+# Melee Positional Miss Trigger for [Triggevent](https://github.com/xpdota/event-trigger/)
+
+The classic positional hit/miss trigger, but now in Triggevent.
+
+To add:
+
+In Triggevent > Plugin Settings > Manage Addons > Add From URL, enter 
 
 This project is an example of how to make a standalone addon for Triggevent.
 
