@@ -1,4 +1,4 @@
-package com.bar.foo;
+package gg.xp.posmiss;
 
 import gg.xp.reevent.events.BaseEvent;
 import gg.xp.xivsupport.events.actlines.events.AbilityUsedEvent;

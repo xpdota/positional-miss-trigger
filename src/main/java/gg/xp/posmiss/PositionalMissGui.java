@@ -1,4 +1,4 @@
-package com.bar.foo;
+package gg.xp.posmiss;
 
 import gg.xp.reevent.scan.ScanMe;
 import gg.xp.xivsupport.gui.TitleBorderFullsizePanel;
