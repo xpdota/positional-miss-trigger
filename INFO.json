@@ -1,7 +1,7 @@
 {
     "name": "Positional Miss Trigger",
     "dir_name": "positional-miss-trigger",
-    "icon_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/SMPTE_Color_Bars.svg/672px-SMPTE_Color_Bars.svg.png",
+    "icon_url": "https://xpdota.github.io/positional-miss-trigger/master/logo_inverted.png",
     "webpage_url": "https://github.com/xpdota/positional-miss-trigger",
     "url_pattern": "https://xpdota.github.io/positional-miss-trigger/master/%s"
 }
