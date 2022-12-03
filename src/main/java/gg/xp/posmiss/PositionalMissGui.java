@@ -39,10 +39,26 @@ public class PositionalMissGui implements PluginTab {
 					}
 					return new XivAbility(pi.abilityId(), name);
 				}, c -> c.setCellRenderer(new ActionAndStatusRenderer())))
-				.addColumn(new CustomColumn<>("Base Potency", PositionalInfo::potencyMiss))
-				.addColumn(new CustomColumn<>("Positional Potency", PositionalInfo::potencyHit))
-				.addColumn(new CustomColumn<>("Combo Potency", PositionalInfo::comboPotencyMiss))
-				.addColumn(new CustomColumn<>("Pos+Combo Potency", PositionalInfo::comboPotencyHit))
+				.addColumn(new CustomColumn<>("Base Potency",
+						PositionalInfo::potencyMiss))
+				.addColumn(new CustomColumn<>("Positional Potency",
+						positionalInfo -> String.format("%s (%s%%)", positionalInfo.potencyHit(), positionalInfo.bonusHit())))
+				.addColumn(new CustomColumn<>("Combo Potency",
+						positionalInfo -> {
+							Integer pot = positionalInfo.potencyComboMiss();
+							if (pot == null) {
+								return null;
+							}
+							return String.format("%s (%s%%)", pot, positionalInfo.comboBonusMiss());
+						}))
+				.addColumn(new CustomColumn<>("Pos+Combo Potency",
+						positionalInfo -> {
+							Integer pot = positionalInfo.potencyComboHit();
+							if (pot == null) {
+								return null;
+							}
+							return String.format("%s (%s%%)", pot, positionalInfo.comboBonusHit());
+						}))
 				.addColumn(new CustomColumn<>("Level Range", pi -> {
 					Integer min = pi.getMinLevel();
 					Integer max = pi.getMaxLevel();

@@ -14,8 +14,8 @@ public final class PositionalInfo {
 	private final long abilityId;
 	private final int potencyMiss;
 	private final int potencyHit;
-	private final @Nullable Integer comboPotencyMiss;
-	private final @Nullable Integer comboPotencyHit;
+	private final @Nullable Integer potencyComboMiss;
+	private final @Nullable Integer potencyComboHit;
 	private final @Nullable Integer minLevel;
 	private final @Nullable Integer maxLevel;
 
@@ -26,8 +26,8 @@ public final class PositionalInfo {
 			@JsonProperty("abilityIdHex") @Nullable String abilityIdHex,
 			@JsonProperty("potencyMiss") int potencyMiss,
 			@JsonProperty("potencyHit") int potencyHit,
-			@JsonProperty("comboPotencyMiss") @Nullable Integer comboPotencyMiss,
-			@JsonProperty("comboPotencyHit") @Nullable Integer comboPotencyHit,
+			@JsonProperty("potencyComboMiss") @Nullable Integer potencyComboMiss,
+			@JsonProperty("potencyComboHit") @Nullable Integer potenctyComboHit,
 			@JsonProperty("minLevel") @Nullable Integer minLevel,
 			@JsonProperty("maxlevel") @Nullable Integer maxLevel,
 			@JsonProperty("comment") @Nullable String comment
@@ -45,8 +45,8 @@ public final class PositionalInfo {
 		}
 		this.potencyMiss = potencyMiss;
 		this.potencyHit = potencyHit;
-		this.comboPotencyMiss = comboPotencyMiss;
-		this.comboPotencyHit = comboPotencyHit;
+		this.potencyComboMiss = potencyComboMiss;
+		this.potencyComboHit = potenctyComboHit;
 		this.minLevel = minLevel;
 		this.maxLevel = maxLevel;
 	}
@@ -80,12 +80,12 @@ public final class PositionalInfo {
 		return potencyHit;
 	}
 
-	public @Nullable Integer comboPotencyMiss() {
-		return comboPotencyMiss;
+	public @Nullable Integer potencyComboMiss() {
+		return potencyComboMiss;
 	}
 
-	public @Nullable Integer comboPotencyHit() {
-		return comboPotencyHit;
+	public @Nullable Integer potencyComboHit() {
+		return potencyComboHit;
 	}
 
 	@Override
@@ -97,15 +97,15 @@ public final class PositionalInfo {
 				this.abilityId == that.abilityId &&
 				this.potencyMiss == that.potencyMiss &&
 				this.potencyHit == that.potencyHit &&
-				Objects.equals(this.comboPotencyMiss, that.comboPotencyMiss) &&
-				Objects.equals(this.comboPotencyHit, that.comboPotencyHit) &&
+				Objects.equals(this.potencyComboMiss, that.potencyComboMiss) &&
+				Objects.equals(this.potencyComboHit, that.potencyComboHit) &&
 				Objects.equals(this.minLevel, that.minLevel) &&
 				Objects.equals(this.maxLevel, that.maxLevel);
 	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(key, abilityId, potencyMiss, potencyHit, comboPotencyMiss, comboPotencyHit, minLevel, maxLevel);
+		return Objects.hash(key, abilityId, potencyMiss, potencyHit, potencyComboMiss, potencyComboHit, minLevel, maxLevel);
 	}
 
 	@Override
@@ -115,23 +115,23 @@ public final class PositionalInfo {
 				"abilityId=" + abilityId + ", " +
 				"potencyMiss=" + potencyMiss + ", " +
 				"potencyHit=" + potencyHit + ", " +
-				"comboPotencyMiss=" + comboPotencyMiss + ", " +
-				"comboPotencyHit=" + comboPotencyHit + ", " +
+				"comboPotencyMiss=" + potencyComboMiss + ", " +
+				"comboPotencyHit=" + potencyComboHit + ", " +
 				"minLevel=" + minLevel + ", " +
 				"maxLevel=" + maxLevel + ']';
 	}
 
 
 	public int bonusHit() {
-		return Math.floorDiv(potencyHit - potencyMiss, potencyHit);
+		return Math.floorDiv(100 * (potencyHit - potencyMiss), potencyHit);
 	}
 
 	public int comboBonusHit() {
-		if (comboPotencyHit == null) {
+		if (potencyComboHit == null) {
 			// -1 will never match
 			return -1;
 		}
-		return Math.floorDiv(comboPotencyHit - potencyMiss, comboPotencyHit);
+		return Math.floorDiv(100 * (potencyComboHit - potencyMiss), potencyComboHit);
 	}
 
 	@SuppressWarnings("MethodMayBeStatic")
@@ -140,11 +140,11 @@ public final class PositionalInfo {
 	}
 
 	public int comboBonusMiss() {
-		if (comboPotencyMiss == null) {
+		if (potencyComboMiss == null) {
 			// -1 will never match
 			return -1;
 		}
-		return Math.floorDiv(comboPotencyMiss - potencyMiss, comboPotencyMiss);
+		return Math.floorDiv(100 * (potencyComboMiss - potencyMiss), potencyComboMiss);
 	}
 
 	public String getComment() {

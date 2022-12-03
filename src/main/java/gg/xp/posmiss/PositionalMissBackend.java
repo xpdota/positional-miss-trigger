@@ -6,7 +6,6 @@ import gg.xp.reevent.scan.ScanMe;
 import gg.xp.xivsupport.events.actlines.events.AbilityUsedEvent;
 import gg.xp.xivsupport.persistence.PersistenceProvider;
 import gg.xp.xivsupport.persistence.settings.BooleanSetting;
-import org.jetbrains.annotations.Nullable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -48,18 +47,13 @@ public class PositionalMissBackend {
 		return positionals;
 	}
 
-	public @Nullable PositionalInfo forAbility(AbilityUsedEvent event) {
+	public List<PositionalInfo> forAbility(AbilityUsedEvent event) {
 		List<PositionalInfo> candidates = perAbility.get(event.getAbility().getId());
 		if (candidates == null) {
-			return null;
+			return Collections.emptyList();
 		}
 		long level = event.getSource().getLevel();
-		for (PositionalInfo candidate : candidates) {
-			if (candidate.validForLevel(level)) {
-				return candidate;
-			}
-		}
-		return null;
+		return candidates.stream().filter(pi -> pi.validForLevel(level)).toList();
 	}
 
 	public BooleanSetting getEnabled() {

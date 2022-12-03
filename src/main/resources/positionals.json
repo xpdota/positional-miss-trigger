@@ -82,16 +82,16 @@
     "abilityIdHex": "1D39",
     "potencyMiss": 120,
     "potencyHit": 170,
-    "comboPotencyMiss": 330,
-    "comboPotencyHit": 380
+    "potencyComboMiss": 330,
+    "potencyComboHit": 380
   },
   {
     "key" : "kasha",
     "abilityIdHex": "1D3A",
     "potencyMiss": 120,
     "potencyHit": 170,
-    "comboPotencyMiss": 330,
-    "comboPotencyHit": 380
+    "potencyComboMiss": 330,
+    "potencyComboHit": 380
   },
   {
     "key": "gibbet",
@@ -139,30 +139,30 @@
     "key": "fangClaw2",
     "comment": "2",
     "abilityIdHex": "DE2",
-    "potencyMiss": 260,
-    "potencyHit": 300
+    "potencyMiss": 360,
+    "potencyHit": 400
   },
   {
     "key": "wheelingThrust2",
     "comment": "2",
     "abilityIdHex": "DE4",
-    "potencyMiss": 260,
-    "potencyHit": 300
+    "potencyMiss": 360,
+    "potencyHit": 400
   },
   {
     "key" : "Chaos Thrust",
     "abilityIdHex": "58",
     "potencyMiss": 100,
     "potencyHit": 140,
-    "comboPotencyMiss": 220,
-    "comboPotencyHit": 260
+    "potencyComboMiss": 220,
+    "potencyComboHit": 260
   },
   {
     "key" : "Chaotic Spring",
     "abilityIdHex": "64AC",
     "potencyMiss": 100,
     "potencyHit": 140,
-    "comboPotencyMiss": 260,
-    "comboPotencyHit": 300
+    "potencyComboMiss": 260,
+    "potencyComboHit": 300
   }
 ]
