@@ -3,5 +3,6 @@
     "dir_name": "positional-miss-trigger",
     "icon_url": "https://xpdota.github.io/positional-miss-trigger/master/logo_inverted.png",
     "webpage_url": "https://github.com/xpdota/positional-miss-trigger",
-    "url_pattern": "https://xpdota.github.io/positional-miss-trigger/master/%s"
+    "url_pattern": "https://xpdota.github.io/positional-miss-trigger/master/%s",
+    "description": "A simple positional hit/miss trigger."
 }
