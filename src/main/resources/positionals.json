@@ -11,8 +11,10 @@
     "key": "snapPunchTrait",
     "comment": "With Trait",
     "abilityIdHex": "38",
-    "potencyMiss": 250,
-    "potencyHit": 310,
+    "potencyMiss": 300,
+    "potencyHit": 360,
+    "potencyComboMiss": 400,
+    "potencyComboHit": 460,
     "minLevel": 84
   },
   {
@@ -27,9 +29,18 @@
     "key": "demoTrait",
     "comment": "With Trait",
     "abilityIdHex": "42",
-    "potencyMiss": 70,
-    "potencyHit": 130,
+    "potencyMiss": 340,
+    "potencyHit": 400,
     "minLevel": 84
+  },
+  {
+    "key": "pouncingCoeurl",
+    "comment": "Base",
+    "abilityIdHex": "9053",
+    "potencyMiss": 340,
+    "potencyHit": 400,
+    "potencyComboMiss": 440,
+    "potencyComboHit": 500
   },
   {
     "key": "aeolianBase",
@@ -37,8 +48,8 @@
     "abilityIdHex": "8CF",
     "potencyMiss": 100,
     "potencyHit": 160,
-    "potencyComboMiss": 340,
-    "potencyComboHit": 400,
+    "potencyComboMiss": 280,
+    "potencyComboHit": 340,
     "maxLevel": 73
   },
   {
@@ -47,9 +58,41 @@
     "abilityIdHex": "8CF",
     "potencyMiss": 140,
     "potencyHit": 200,
+    "potencyComboMiss": 320,
+    "potencyComboHit": 380,
+    "minLevel": 74,
+    "maxLevel": 93
+  },
+  {
+    "key": "aeolianTraitWithKaze",
+    "comment": "With Trait and Kaze",
+    "abilityIdHex": "8CF",
+    "potencyMiss": 240,
+    "potencyHit": 300,
+    "potencyComboMiss": 420,
+    "potencyComboHit": 480,
+    "minLevel": 74,
+    "maxLevel": 93
+  },
+  {
+    "key": "aeolianTrait2",
+    "comment": "With Trait #2",
+    "abilityIdHex": "8CF",
+    "potencyMiss": 200,
+    "potencyHit": 260,
     "potencyComboMiss": 380,
     "potencyComboHit": 440,
-    "minLevel": 74
+    "minLevel": 94
+  },
+  {
+    "key": "aeolianTrait2withKaze",
+    "comment": "With Trait #2 and Kaze",
+    "abilityIdHex": "8CF",
+    "potencyMiss": 300,
+    "potencyHit": 360,
+    "potencyComboMiss": 480,
+    "potencyComboHit": 540,
+    "minLevel": 94
   },
   {
     "key": "armorCrushBase",
@@ -67,9 +110,20 @@
     "abilityIdHex": "DEB",
     "potencyMiss": 140,
     "potencyHit": 200,
-    "potencyComboMiss": 360,
-    "potencyComboHit": 420,
-    "minLevel": 74
+    "potencyComboMiss": 340,
+    "potencyComboHit": 400,
+    "minLevel": 74,
+    "maxLevel": 93
+  },
+  {
+    "key": "armorCrushTrait2",
+    "comment": "With Trait #2",
+    "abilityIdHex": "DEB",
+    "potencyMiss": 220,
+    "potencyHit": 260,
+    "potencyComboMiss": 420,
+    "potencyComboHit": 480,
+    "minLevel": 94
   },
   {
     "key": "trickAttack",
@@ -79,14 +133,27 @@
   },
   {
     "key" : "gekko",
+    "comment": "Base",
     "abilityIdHex": "1D39",
     "potencyMiss": 120,
     "potencyHit": 170,
     "potencyComboMiss": 330,
-    "potencyComboHit": 380
+    "potencyComboHit": 380,
+    "maxLevel": 93
+  },
+  {
+    "key" : "gekkoTrait",
+    "comment": "With Trait",
+    "abilityIdHex": "1D39",
+    "potencyMiss": 180,
+    "potencyHit": 230,
+    "potencyComboMiss": 390,
+    "potencyComboHit": 440,
+    "minLevel": 94
   },
   {
     "key" : "kasha",
+    "comment": "Base",
     "abilityIdHex": "1D3A",
     "potencyMiss": 120,
     "potencyHit": 170,
@@ -94,60 +161,141 @@
     "potencyComboHit": 380
   },
   {
+    "key" : "kashaTrait",
+    "comment": "With Trait",
+    "abilityIdHex": "1D3A",
+    "potencyMiss": 180,
+    "potencyHit": 230,
+    "potencyComboMiss": 390,
+    "potencyComboHit": 440
+  },
+  {
     "key": "gibbet",
-    "comment": "Normal",
+    "comment": "Base",
     "abilityIdHex": "5F3E",
     "potencyMiss": 400,
-    "potencyHit": 460
+    "potencyHit": 460,
+    "maxLevel": 93
+  },
+  {
+    "key": "gibbetTrait",
+    "comment": "With Trait",
+    "abilityIdHex": "5F3E",
+    "potencyMiss": 500,
+    "potencyHit": 560,
+    "minLevel": 94
   },
   {
     "key": "enhancedGibbet",
     "comment": "Enhanced",
     "abilityIdHex": "5F3E",
     "potencyMiss": 460,
-    "potencyHit": 520
+    "potencyHit": 520,
+    "maxLevel": 93
+  },
+  {
+    "key": "enhancedGibbetTrait",
+    "comment": "Enhanced with Trait",
+    "abilityIdHex": "5F3E",
+    "potencyMiss": 560,
+    "potencyHit": 620,
+    "minLevel": 94
   },
   {
     "key": "gallows",
-    "comment": "Normal",
+    "comment": "Base",
     "abilityIdHex": "5F3F",
     "potencyMiss": 400,
-    "potencyHit": 460
+    "potencyHit": 460,
+    "maxLevel": 93
+  },
+  {
+    "key": "gallowsTrait",
+    "comment": "With Trait",
+    "abilityIdHex": "5F3F",
+    "potencyMiss": 500,
+    "potencyHit": 560,
+    "minLevel": 94
   },
   {
     "key": "enhancedGallows",
     "comment": "Enhanced",
     "abilityIdHex": "5F3F",
     "potencyMiss": 460,
-    "potencyHit": 520
+    "potencyHit": 520,
+    "maxLevel": 93
+  },
+  {
+    "key": "enhancedGallowsTrait",
+    "comment": "Enhanced with Trait",
+    "abilityIdHex": "5F3F",
+    "potencyMiss": 560,
+    "potencyHit": 620,
+    "minLevel": 94
+  },
+  {
+    "key": "execGibbet",
+    "comment": "Base",
+    "abilityIdHex": "906A",
+    "potencyMiss": 700,
+    "potencyHit": 760
+  },
+  {
+    "key": "enhancedExecGibbet",
+    "comment": "Enhanced",
+    "abilityIdHex": "906A",
+    "potencyMiss": 760,
+    "potencyHit": 820
+  },
+  {
+    "key": "execGallows",
+    "comment": "Base",
+    "abilityIdHex": "906B",
+    "potencyMiss": 700,
+    "potencyHit": 760
+  },
+  {
+    "key": "execEnhancedGallows",
+    "comment": "Enhanced",
+    "abilityIdHex": "906B",
+    "potencyMiss": 760,
+    "potencyHit": 820
   },
   {
     "key": "fangClaw1",
-    "comment": "1",
+    "comment": "Base",
     "abilityIdHex": "DE2",
-    "potencyMiss": 260,
-    "potencyHit": 300
+    "potencyMiss": 100,
+    "potencyHit": 140,
+    "potencyComboMiss": 260,
+    "potencyComboHit": 300
   },
   {
     "key": "wheelingThrust1",
-    "comment": "1",
+    "comment": "Base",
     "abilityIdHex": "DE4",
-    "potencyMiss": 260,
-    "potencyHit": 300
+    "potencyMiss": 100,
+    "potencyHit": 140,
+    "potencyComboMiss": 260,
+    "potencyComboHit": 300
   },
   {
-    "key": "fangClaw2",
-    "comment": "2",
+    "key": "fangClaw1trait",
+    "comment": "Trait",
     "abilityIdHex": "DE2",
-    "potencyMiss": 360,
-    "potencyHit": 400
+    "potencyMiss": 140,
+    "potencyHit": 180,
+    "potencyComboMiss": 300,
+    "potencyComboHit": 340
   },
   {
-    "key": "wheelingThrust2",
-    "comment": "2",
+    "key": "wheelingThrust1trait",
+    "comment": "Trait",
     "abilityIdHex": "DE4",
-    "potencyMiss": 360,
-    "potencyHit": 400
+    "potencyMiss": 140,
+    "potencyHit": 180,
+    "potencyComboMiss": 300,
+    "potencyComboHit": 340
   },
   {
     "key" : "Chaos Thrust",
@@ -158,11 +306,21 @@
     "potencyComboHit": 260
   },
   {
-    "key" : "Chaotic Spring",
+    "key" : "chaoticSpring",
     "abilityIdHex": "64AC",
     "potencyMiss": 100,
     "potencyHit": 140,
     "potencyComboMiss": 260,
-    "potencyComboHit": 300
+    "potencyComboHit": 300,
+    "maxLevel": 93
+  },
+  {
+    "key" : "chaoticSpringTrait",
+    "abilityIdHex": "64AC",
+    "potencyMiss": 140,
+    "potencyHit": 180,
+    "potencyComboMiss": 300,
+    "potencyComboHit": 340,
+    "minLevel": 94
   }
 ]
