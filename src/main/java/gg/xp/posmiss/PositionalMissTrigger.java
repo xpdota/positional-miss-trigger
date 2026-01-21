@@ -37,11 +37,13 @@ public class PositionalMissTrigger implements OverridesCalloutGroupEnabledSettin
 			List<DamageTakenEffect> effects = event.getEffectsOfType(DamageTakenEffect.class);
 			for (DamageTakenEffect effect : effects) {
 				int bonusPercent = effect.getComboBonus();
-				if (bonusPercent == positionalInfo.bonusHit() || bonusPercent == positionalInfo.comboBonusHit()) {
+				if (bonusPercent == positionalInfo.bonusHit() || bonusPercent == positionalInfo.comboBonusHit() ||
+						(positionalInfo.fixedHitPercent() != null && bonusPercent == positionalInfo.fixedHitPercent())) {
 					context.accept(new PositionalTriggerResult(event, true));
 					return;
 				}
-				else if (bonusPercent == positionalInfo.bonusMiss() || bonusPercent == positionalInfo.comboBonusMiss()) {
+				else if (bonusPercent == positionalInfo.bonusMiss() || bonusPercent == positionalInfo.comboBonusMiss() ||
+						(positionalInfo.fixedMissPercent() != null && bonusPercent == positionalInfo.fixedMissPercent())) {
 					context.accept(new PositionalTriggerResult(event, false));
 					return;
 				}
