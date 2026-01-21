@@ -18,6 +18,8 @@ public final class PositionalInfo {
 	private final @Nullable Integer potencyComboHit;
 	private final @Nullable Integer minLevel;
 	private final @Nullable Integer maxLevel;
+	private final @Nullable Integer fixedHitPercent;
+	private final @Nullable Integer fixedMissPercent;
 
 	@JsonCreator
 	public PositionalInfo(
@@ -27,9 +29,11 @@ public final class PositionalInfo {
 			@JsonProperty("potencyMiss") int potencyMiss,
 			@JsonProperty("potencyHit") int potencyHit,
 			@JsonProperty("potencyComboMiss") @Nullable Integer potencyComboMiss,
-			@JsonProperty("potencyComboHit") @Nullable Integer potenctyComboHit,
+			@JsonProperty("potencyComboHit") @Nullable Integer potencyComboHit,
 			@JsonProperty("minLevel") @Nullable Integer minLevel,
 			@JsonProperty("maxlevel") @Nullable Integer maxLevel,
+			@JsonProperty("fixedHitPercent") @Nullable Integer fixedHitPercent,
+			@JsonProperty("fixedMissPercent") @Nullable Integer fixedMissPercent,
 			@JsonProperty("comment") @Nullable String comment
 	) {
 		this.key = key;
@@ -46,9 +50,11 @@ public final class PositionalInfo {
 		this.potencyMiss = potencyMiss;
 		this.potencyHit = potencyHit;
 		this.potencyComboMiss = potencyComboMiss;
-		this.potencyComboHit = potenctyComboHit;
+		this.potencyComboHit = potencyComboHit;
 		this.minLevel = minLevel;
 		this.maxLevel = maxLevel;
+		this.fixedHitPercent = fixedHitPercent;
+		this.fixedMissPercent = fixedMissPercent;
 	}
 
 	public boolean validForLevel(long level) {
@@ -88,6 +94,14 @@ public final class PositionalInfo {
 		return potencyComboHit;
 	}
 
+	public @Nullable Integer fixedHitPercent() {
+		return fixedHitPercent;
+	}
+
+	public @Nullable Integer fixedMissPercent() {
+		return fixedMissPercent;
+	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (obj == this) return true;
@@ -100,12 +114,15 @@ public final class PositionalInfo {
 				Objects.equals(this.potencyComboMiss, that.potencyComboMiss) &&
 				Objects.equals(this.potencyComboHit, that.potencyComboHit) &&
 				Objects.equals(this.minLevel, that.minLevel) &&
-				Objects.equals(this.maxLevel, that.maxLevel);
+				Objects.equals(this.maxLevel, that.maxLevel) &&
+				Objects.equals(this.fixedHitPercent, that.fixedHitPercent) &&
+				Objects.equals(this.fixedMissPercent, that.fixedMissPercent);
 	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(key, abilityId, potencyMiss, potencyHit, potencyComboMiss, potencyComboHit, minLevel, maxLevel);
+		return Objects.hash(key, abilityId, potencyMiss, potencyHit, potencyComboMiss, potencyComboHit, minLevel,
+				maxLevel, fixedHitPercent, fixedMissPercent);
 	}
 
 	@Override
@@ -118,7 +135,9 @@ public final class PositionalInfo {
 				"comboPotencyMiss=" + potencyComboMiss + ", " +
 				"comboPotencyHit=" + potencyComboHit + ", " +
 				"minLevel=" + minLevel + ", " +
-				"maxLevel=" + maxLevel + ']';
+				"maxLevel=" + maxLevel + ", " +
+				"fixedHitPercent=" + fixedHitPercent + ", " +
+				"fixedMissPercent=" + fixedMissPercent + ']';
 	}
 
 

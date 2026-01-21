@@ -3,44 +3,55 @@
     "key": "snapPunchBase",
     "comment": "Base",
     "abilityIdHex": "38",
-    "potencyMiss": 70,
-    "potencyHit": 130,
+    "potencyMiss": 230,
+    "potencyHit": 290,
+    "potencyComboMiss": 380,
+    "potencyComboHit": 440,
     "maxLevel": 83
   },
   {
     "key": "snapPunchTrait",
     "comment": "With Trait",
     "abilityIdHex": "38",
-    "potencyMiss": 300,
-    "potencyHit": 360,
-    "potencyComboMiss": 400,
-    "potencyComboHit": 460,
+    "potencyMiss": 270,
+    "potencyHit": 330,
+    "potencyComboMiss": 420,
+    "potencyComboHit": 480,
     "minLevel": 84
   },
   {
     "key": "demoBase",
     "comment": "Base",
     "abilityIdHex": "42",
-    "potencyMiss": 40,
-    "potencyHit": 100,
+    "potencyMiss": 280,
+    "potencyHit": 340,
     "maxLevel": 83
   },
   {
     "key": "demoTrait",
     "comment": "With Trait",
     "abilityIdHex": "42",
-    "potencyMiss": 340,
-    "potencyHit": 400,
-    "minLevel": 84
+    "potencyMiss": 320,
+    "potencyHit": 380,
+    "minLevel": 84,
+    "maxLevel": 93
+  },
+  {
+    "key": "demoTrait2",
+    "comment": "With Trait #2",
+    "abilityIdHex": "42",
+    "potencyMiss": 360,
+    "potencyHit": 420,
+    "minLevel": 94
   },
   {
     "key": "pouncingCoeurl",
     "comment": "Base",
     "abilityIdHex": "9053",
-    "potencyMiss": 340,
-    "potencyHit": 400,
-    "potencyComboMiss": 440,
-    "potencyComboHit": 500
+    "potencyMiss": 310,
+    "potencyHit": 370,
+    "potencyComboMiss": 460,
+    "potencyComboHit": 520
   },
   {
     "key": "aeolianBase",
@@ -50,6 +61,16 @@
     "potencyHit": 160,
     "potencyComboMiss": 280,
     "potencyComboHit": 340,
+    "maxLevel": 73
+  },
+  {
+    "key": "aeolianBaseWithKaze",
+    "comment": "Base With Kaze",
+    "abilityIdHex": "8CF",
+    "potencyMiss": 200,
+    "potencyHit": 260,
+    "potencyComboMiss": 380,
+    "potencyComboHit": 440,
     "maxLevel": 73
   },
   {
@@ -78,20 +99,20 @@
     "key": "aeolianTrait2",
     "comment": "With Trait #2",
     "abilityIdHex": "8CF",
-    "potencyMiss": 200,
-    "potencyHit": 260,
-    "potencyComboMiss": 380,
-    "potencyComboHit": 440,
+    "potencyMiss": 220,
+    "potencyHit": 280,
+    "potencyComboMiss": 400,
+    "potencyComboHit": 460,
     "minLevel": 94
   },
   {
     "key": "aeolianTrait2withKaze",
     "comment": "With Trait #2 and Kaze",
     "abilityIdHex": "8CF",
-    "potencyMiss": 300,
-    "potencyHit": 360,
-    "potencyComboMiss": 480,
-    "potencyComboHit": 540,
+    "potencyMiss": 320,
+    "potencyHit": 380,
+    "potencyComboMiss": 500,
+    "potencyComboHit": 560,
     "minLevel": 94
   },
   {
@@ -100,8 +121,8 @@
     "abilityIdHex": "DEB",
     "potencyMiss": 100,
     "potencyHit": 160,
-    "potencyComboMiss": 320,
-    "potencyComboHit": 380,
+    "potencyComboMiss": 300,
+    "potencyComboHit": 360,
     "maxLevel": 73
   },
   {
@@ -119,10 +140,10 @@
     "key": "armorCrushTrait2",
     "comment": "With Trait #2",
     "abilityIdHex": "DEB",
-    "potencyMiss": 220,
-    "potencyHit": 280,
-    "potencyComboMiss": 420,
-    "potencyComboHit": 480,
+    "potencyMiss": 240,
+    "potencyHit": 300,
+    "potencyComboMiss": 440,
+    "potencyComboHit": 500,
     "minLevel": 94
   },
   {
@@ -132,42 +153,42 @@
     "potencyHit": 400
   },
   {
-    "key" : "gekko",
+    "key": "gekko",
     "comment": "Base",
     "abilityIdHex": "1D39",
-    "potencyMiss": 120,
-    "potencyHit": 170,
-    "potencyComboMiss": 330,
-    "potencyComboHit": 380,
+    "potencyMiss": 110,
+    "potencyHit": 160,
+    "potencyComboMiss": 320,
+    "potencyComboHit": 370,
     "maxLevel": 93
   },
   {
-    "key" : "gekkoTrait",
+    "key": "gekkoTrait",
     "comment": "With Trait",
     "abilityIdHex": "1D39",
-    "potencyMiss": 180,
-    "potencyHit": 230,
-    "potencyComboMiss": 390,
-    "potencyComboHit": 440,
+    "potencyMiss": 160,
+    "potencyHit": 210,
+    "potencyComboMiss": 370,
+    "potencyComboHit": 420,
     "minLevel": 94
   },
   {
-    "key" : "kasha",
+    "key": "kasha",
     "comment": "Base",
     "abilityIdHex": "1D3A",
-    "potencyMiss": 120,
-    "potencyHit": 170,
-    "potencyComboMiss": 330,
-    "potencyComboHit": 380
+    "potencyMiss": 110,
+    "potencyHit": 160,
+    "potencyComboMiss": 320,
+    "potencyComboHit": 370
   },
   {
-    "key" : "kashaTrait",
+    "key": "kashaTrait",
     "comment": "With Trait",
     "abilityIdHex": "1D3A",
-    "potencyMiss": 180,
-    "potencyHit": 230,
-    "potencyComboMiss": 390,
-    "potencyComboHit": 440
+    "potencyMiss": 160,
+    "potencyHit": 210,
+    "potencyComboMiss": 370,
+    "potencyComboHit": 420
   },
   {
     "key": "gibbet",
@@ -268,7 +289,8 @@
     "potencyMiss": 100,
     "potencyHit": 140,
     "potencyComboMiss": 260,
-    "potencyComboHit": 300
+    "potencyComboHit": 300,
+    "maxLevel": 93
   },
   {
     "key": "wheelingThrust1",
@@ -277,7 +299,8 @@
     "potencyMiss": 100,
     "potencyHit": 140,
     "potencyComboMiss": 260,
-    "potencyComboHit": 300
+    "potencyComboHit": 300,
+    "maxLevel": 93
   },
   {
     "key": "fangClaw1trait",
@@ -286,7 +309,8 @@
     "potencyMiss": 140,
     "potencyHit": 180,
     "potencyComboMiss": 300,
-    "potencyComboHit": 340
+    "potencyComboHit": 340,
+    "minLevel": 94
   },
   {
     "key": "wheelingThrust1trait",
@@ -295,10 +319,11 @@
     "potencyMiss": 140,
     "potencyHit": 180,
     "potencyComboMiss": 300,
-    "potencyComboHit": 340
+    "potencyComboHit": 340,
+    "minLevel": 94
   },
   {
-    "key" : "Chaos Thrust",
+    "key": "Chaos Thrust",
     "abilityIdHex": "58",
     "potencyMiss": 100,
     "potencyHit": 140,
@@ -306,7 +331,7 @@
     "potencyComboHit": 260
   },
   {
-    "key" : "chaoticSpring",
+    "key": "chaoticSpring",
     "abilityIdHex": "64AC",
     "potencyMiss": 100,
     "potencyHit": 140,
@@ -315,12 +340,184 @@
     "maxLevel": 93
   },
   {
-    "key" : "chaoticSpringTrait",
+    "key": "chaoticSpringTrait",
     "abilityIdHex": "64AC",
     "potencyMiss": 140,
     "potencyHit": 180,
     "potencyComboMiss": 300,
     "potencyComboHit": 340,
     "minLevel": 94
+  },
+  {
+    "key": "flankstingStrike",
+    "comment": "Base",
+    "abilityIdHex": "8732",
+    "potencyMiss": 320,
+    "potencyHit": 380,
+    "fixedMissPercent": 56,
+    "fixedHitPercent": 63,
+    "maxLevel": 83
+  },
+  {
+    "key": "flankstingStrikeEnhanced",
+    "comment": "Enhanced",
+    "abilityIdHex": "8732",
+    "potencyMiss": 420,
+    "potencyHit": 480,
+    "fixedMissPercent": 42,
+    "fixedHitPercent": 50,
+    "maxLevel": 83
+  },
+  {
+    "key": "flankstingStrikeTrait",
+    "comment": "With Trait",
+    "abilityIdHex": "8732",
+    "potencyMiss": 340,
+    "potencyHit": 400,
+    "fixedMissPercent": 52,
+    "fixedHitPercent": 60,
+    "minLevel": 84
+  },
+  {
+    "key": "flankstingStrikeEnhancedTrait",
+    "comment": "Enhanced With Trait",
+    "abilityIdHex": "8732",
+    "potencyMiss": 440,
+    "potencyHit": 500,
+    "fixedMissPercent": 40,
+    "fixedHitPercent": 48,
+    "minLevel": 84
+  },
+  {
+    "key": "flanksbaneFang",
+    "comment": "Base",
+    "abilityIdHex": "8733",
+    "potencyMiss": 320,
+    "potencyHit": 380,
+    "fixedMissPercent": 56,
+    "fixedHitPercent": 63,
+    "maxLevel": 83
+  },
+  {
+    "key": "flanksbaneFangEnhanced",
+    "comment": "Enhanced",
+    "abilityIdHex": "8733",
+    "potencyMiss": 420,
+    "potencyHit": 480,
+    "fixedMissPercent": 42,
+    "fixedHitPercent": 50,
+    "maxLevel": 83
+  },
+  {
+    "key": "flanksbaneFangTrait",
+    "comment": "With Trait",
+    "abilityIdHex": "8733",
+    "potencyMiss": 340,
+    "potencyHit": 400,
+    "fixedMissPercent": 52,
+    "fixedHitPercent": 60,
+    "minLevel": 84
+  },
+  {
+    "key": "flanksbaneFangEnhancedTrait",
+    "comment": "Enhanced With Trait",
+    "abilityIdHex": "8733",
+    "potencyMiss": 440,
+    "potencyHit": 500,
+    "fixedMissPercent": 40,
+    "fixedHitPercent": 48,
+    "minLevel": 84
+  },
+  {
+    "key": "hindstingStrike",
+    "comment": "Base",
+    "abilityIdHex": "8734",
+    "potencyMiss": 320,
+    "potencyHit": 380,
+    "fixedMissPercent": 56,
+    "fixedHitPercent": 63,
+    "maxLevel": 83
+  },
+  {
+    "key": "hindstingStrikeEnhanced",
+    "comment": "Enhanced",
+    "abilityIdHex": "8734",
+    "potencyMiss": 420,
+    "potencyHit": 480,
+    "fixedMissPercent": 42,
+    "fixedHitPercent": 50,
+    "maxLevel": 83
+  },
+  {
+    "key": "hindstingStrikeTrait",
+    "comment": "With Trait",
+    "abilityIdHex": "8734",
+    "potencyMiss": 340,
+    "potencyHit": 400,
+    "fixedMissPercent": 52,
+    "fixedHitPercent": 60,
+    "minLevel": 84
+  },
+  {
+    "key": "hindstingStrikeEnhancedTrait",
+    "comment": "Enhanced With Trait",
+    "abilityIdHex": "8734",
+    "potencyMiss": 440,
+    "potencyHit": 500,
+    "fixedMissPercent": 40,
+    "fixedHitPercent": 48,
+    "minLevel": 84
+  },
+  {
+    "key": "hindsbaneFang",
+    "comment": "Base",
+    "abilityIdHex": "8735",
+    "potencyMiss": 320,
+    "potencyHit": 380,
+    "fixedMissPercent": 56,
+    "fixedHitPercent": 63,
+    "maxLevel": 83
+  },
+  {
+    "key": "hindsbaneFangEnhanced",
+    "comment": "Enhanced",
+    "abilityIdHex": "8735",
+    "potencyMiss": 420,
+    "potencyHit": 480,
+    "fixedMissPercent": 42,
+    "fixedHitPercent": 50,
+    "maxLevel": 83
+  },
+  {
+    "key": "hindsbaneFangTrait",
+    "comment": "With Trait",
+    "abilityIdHex": "8735",
+    "potencyMiss": 340,
+    "potencyHit": 400,
+    "fixedMissPercent": 52,
+    "fixedHitPercent": 60,
+    "minLevel": 84
+  },
+  {
+    "key": "hindsbaneFangEnhancedTrait",
+    "comment": "Enhanced With Trait",
+    "abilityIdHex": "8735",
+    "potencyMiss": 440,
+    "potencyHit": 500,
+    "fixedMissPercent": 40,
+    "fixedHitPercent": 48,
+    "minLevel": 84
+  },
+  {
+    "key": "huntersCoil",
+    "abilityIdHex": "873D",
+    "potencyMiss": 570,
+    "potencyHit": 620
+  },
+  {
+    "key": "swiftskinsCoil",
+    "abilityIdHex": "873E",
+    "potencyMiss": 570,
+    "potencyHit": 620
   }
 ]
