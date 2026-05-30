@@ -511,13 +511,13 @@
   {
     "key": "huntersCoil",
     "abilityIdHex": "873D",
-    "potencyMiss": 570,
-    "potencyHit": 620
+    "potencyMiss": 630,
+    "potencyHit": 680
   },
   {
     "key": "swiftskinsCoil",
     "abilityIdHex": "873E",
-    "potencyMiss": 570,
-    "potencyHit": 620
+    "potencyMiss": 630,
+    "potencyHit": 680
   }
 ]
