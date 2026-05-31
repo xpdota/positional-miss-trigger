@@ -1,15 +1,14 @@
 package gg.xp.posmiss;
 
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import gg.xp.reevent.scan.ScanMe;
 import gg.xp.xivsupport.events.actlines.events.AbilityUsedEvent;
 import gg.xp.xivsupport.persistence.PersistenceProvider;
 import gg.xp.xivsupport.persistence.settings.BooleanSetting;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import tools.jackson.core.type.TypeReference;
+import tools.jackson.databind.ObjectMapper;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -31,13 +30,8 @@ public class PositionalMissBackend {
 	public PositionalMissBackend(PersistenceProvider pers) {
 		enabled = new BooleanSetting(pers, "positional-miss.enabled", true);
 		ObjectMapper mapper = new ObjectMapper();
-		try {
-			positionals = Collections.unmodifiableList(mapper.readValue(PositionalMissBackend.class.getResourceAsStream("/positionals.json"), new TypeReference<>() {
-			}));
-		}
-		catch (IOException e) {
-			throw new RuntimeException(e);
-		}
+		positionals = Collections.unmodifiableList(mapper.readValue(PositionalMissBackend.class.getResourceAsStream("/positionals.json"), new TypeReference<>() {
+		}));
 		positionals.forEach(pos -> {
 			perAbility.computeIfAbsent(pos.abilityId(), unused -> new ArrayList<>()).add(pos);
 		});
